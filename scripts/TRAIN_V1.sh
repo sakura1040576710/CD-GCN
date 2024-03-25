@@ -3,7 +3,7 @@ RECORD=xsub1_5
 WORKDIR=work_dir/$RECORD
 MODELNAME=runs/$RECORD
 
-CONFIG=./config/uav-cross-subjectv2/train.yaml
+CONFIG=./config/uav-cross-subjectv1/train.yaml
 
 START_EPOCH=50
 EPOCH_NUM=60
