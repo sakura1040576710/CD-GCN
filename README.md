@@ -1,4 +1,4 @@
-# VE-GCN
+# CD-GCN
 
 ## Result
 
@@ -9,7 +9,7 @@
 |    Shift-GCN     |   40.8   |   66.5   |
 |      TE-GCN      |   42.5   |   68.2   |
 |     FR-AGCN      |   44.0   |   69.5   |
-| **VE-GCN(Ours)** | **46.9** | **74.1** |
+| **CD-GCN(Ours)** | **46.9** | **74.2** |
 
 ## Data Preparation
 
@@ -109,11 +109,11 @@ sh scripts/EVAL_V2.sh
 - To ensemble the results of different modalities, run
 
 ```
-# Example: ensemble six modalities of VEGCN on UAV/xsub1
+# Example: ensemble six modalities of CDGCN on UAV/xsub1
 python ensemble_6s.py --dataset UAV/xsub1 --joint work_dir/xsub1_0/epoch36_test_score.pkl --bone work_dir/xsub1_1/epoch36_test_score.pkl --joint-motion work_dir/xsub1_4/epoch36_test_score.pkl --bone-motion work_dir/xsub1_5/epoch36_test_score.pkl --prompt work_dir/xsub1_2/epoch43_test_score.pkl --prompt2 work_dir/xsub1_3/epoch37_test_score.pkl
 ```
 
 ```
-# Example: ensemble six modalities of VEGCN on UAV/xsub2
+# Example: ensemble six modalities of CDGCN on UAV/xsub2
 python ensemble_6s.py --dataset UAV/xsub2 --joint work_dir/2103/epoch33_test_score.pkl --bone work_dir/2104/epoch34_test_score.pkl --joint-motion work_dir/vel_01/epoch34_test_score.pkl --bone-motion work_dir/vel_0/epoch34_test_score.pkl --prompt work_dir/vel_02/epoch34_test_score.pkl --prompt2 work_dir/vel_03/epoch32_test_score.pkl
 ```
